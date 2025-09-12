@@ -1,0 +1,101 @@
+.cat-img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
+< !--.bg {
+    background-image: url('bedroom.avif');
+    background-size: cover;
+    height: 480px;
+    width: 900px;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+-->.content {
+
+    padding: 40px;
+}
+
+.filter {
+    height: 290px;
+    filter: brightness(30px) contrast(20px) hue-rotate(-6deg);
+}
+
+.demo {
+    width: 300px;
+    background-color: blue;
+    color: white;
+    border-radius: 14px;
+    padding: 10px;
+    transform: translate(50px, 50px);
+    margin: 60px auto;
+}
+
+.demo1 {
+    width: 300px;
+    background-color: orangered;
+    color: white;
+    border-radius: 14px;
+    padding: 10px;
+    /*transform: ;*/
+    margin: 60px auto;
+}
+
+h1::first-line {
+    color: blue;
+}
+
+h1::first-letter {
+    color: brown;
+}
+
+h1::selection {
+    background-color: black;
+    color: white;
+}
+
+h1:hover {
+    color: violet;
+    cursor: pointer;
+}
+
+input {
+    width: 300px;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+input:focus {
+    border: 1px solid red;
+    outline: none;
+}
+
+button:active {
+    background-color: red;
+}
+
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: red;
+}
+
+p:nth-child(3n) {
+    color: orangered;
+}
+
+.test::before {
+    content: "😊";
+}
+
+.test::after {
+    content: "😊";
+}
