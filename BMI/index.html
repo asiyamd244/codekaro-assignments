@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    .unit-label {
+        position: relative;
+        right: 34px;
+        top: 1px;
+
+
+
+    }
+</style>
+
+<body>
+
+    <div class="w-[600px] h-[1000px] text-center bg-[#f5f5f5] border-4 border-green-100 p-5">
+        <div class="m-30 w-[300px] rounded-lg bg-white border-1 mx-auto">
+            <h1 class="font-bold text-black">BMI CALCULATOR</h1>
+            <div>
+                <label class="text-black font-semi-bold mt-5" for="height">Height</label><br />
+                <input type="text" id="height" placeholder="enter the height"
+                    class="rounded-full mx-auto border-2 p-3 flex-grow" />
+                <span class="unit-label">ft</span>
+            </div>
+            <div>
+                <label class="text-black font-semi-bold" for="weight">Weight </label></br>
+                <input id="weight" type="text" placeholder="enter the weight"
+                    class="rounded-full mx-auto border-2 p-3" />
+                <span class="unit-label">kg</span>
+            </div>
+            <div>
+                <label class="text-black font-semi-bold">BMI </label></br>
+                <input type="text" placeholder="enter the BMI" class="rounded-full mx-auto border-2 p-3" />
+
+            </div>
+            <div class="resultDiv">
+                <button class="mt-10 mb-10 text-black bg-blue-500 rounded-lg border-1 w-[200px]"
+                    onclick="calculate()">Calculate</button><br>
+                <h1 id="result"></h1>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
