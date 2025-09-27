@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="flex justify-center">
+            <img src="BrandAssets_Logos_02-NSymbol.jpg" class="logo" alt="img" />
+        </div>
+        <h1 class="text-neutral-300 text-3xl font-bold">Search unlimited movies Tv shows and more</h1>
+        <p class="text-neutral-400 text-lg">Ready to watch? Enter your email and mobile number to create or
+            restart your membership </p>
+        <div class="flex mt-3 justify-center">
+            <input type="text" placeholder="search a movie..." id="movieName" class="px-3 py-4 text-white">
+            <button class="btn" onclick="search()">SearchMovie</button>
+        </div>
+        <div id="container" class="w-[700px] mx-auto mt-16">
+
+            <div class="flex text-neutral-200 gap-10">
+                <div class="movie">
+                    <h2 id="title" class="text-2xl font-bold head">RRR</h2>
+                    <div class="">
+                        <p id="disc" class="text-md text-neutral-100">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.Expedita inventore repudiandae aspernatur alias quisquam numquam in.</p>
+                        <p class="my-1">Genre:<span class="text-neutral-300" id="genre"></span></p>
+                        <p class="my-1">Actors:<span class="text-neutral-300" id="actors">NTR,AliaBhat,AjayDevgan</span>
+                        </p>
+                        <p class="my-1">Directors:<span class="text-neutral-300" id="directors">Rajmouli</span></p>
+                        <p class="my-1">Awards:<span class="text-neutral-300" id="awards">Ascar</span></p>
+                        <p class="my-1">Box Office collection:<span class="text-neutral-300"
+                                id="collection">2crores</span>
+                        </p>
+                        <p class="my-1">Launguages:<span class="text-neutral-300" id="ln">Telugu,hindi</span></p>
+                        <p class="my-1">IMDB rating:<span class="text-neutral-300" id="rating">5</span></p>
+                    </div>
+
+                </div>
+                <div class="banner">
+                    <img id="poster"
+                        src="https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_SX300.jpg"
+                        class="rounded-xl" />
+                    <div class="suggestion">
+                        Worth watching
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-3xl font-bold text-center my-36 text-neutral-100" id="error"></h1>
+
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
